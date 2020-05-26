@@ -3,7 +3,9 @@ package com.example.library_0526;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.bumptech.glide.Glide;
 import com.example.library_0526.databinding.ActivityMainBinding;
@@ -22,6 +24,13 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
+        binding.profileId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext,PhotoActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
