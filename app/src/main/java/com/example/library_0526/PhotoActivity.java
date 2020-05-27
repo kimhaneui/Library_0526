@@ -24,6 +24,7 @@ public class PhotoActivity extends BaseActivity {
 
 
 
+
     }
 
     @Override
